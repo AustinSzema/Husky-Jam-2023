@@ -17,7 +17,7 @@ public class Flip : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             explosionPos = carTransform.position - new Vector3(0f, carTransform.localScale.y / 2f, 0f);
             rb.AddExplosionForce(power, explosionPos, explosionRadius, 3.0f);
